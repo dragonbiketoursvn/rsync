@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/customar/production_dummy/test_folder
+    - rsync -a -v --delete-after /home/customar/repositories/repo_dummy/test_folder/ $DEPLOYPATH
